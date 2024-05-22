@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algorithme Glouton</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" href="Algo.png" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-item-active">
+        <img src="Algo.png" height="25px" width="25px" /><a
+          class="TextNavBarActive"
+          href="page3.html"
+          >Algorithme Glouton</a
+        >
+      </div>
+      <div class="nav-item">
+        <img src="Linoux.png" height="25px" width="25px" /><a
+          class="TextNavBar"
+          href="page1.html"
+          >Commande Linux</a
+        >
+      </div>
+      <div class="nav-item">
+        <img src="Quizz.png" height="25px" width="25px" /><a
+          class="TextNavBar"
+          href="page2.html"
+        >
+          Quizz</a
+        >
+      </div>
+    </nav>
+
+    <h1>Algorithme Glouton</h1>
+    <section class="columns">
+      <div class="column">
+        <ul>
+          <li class="FlecheLi">
+            <h2>Qu'est-ce qu'un algorithme Glouton ?</h2>
+            <p>
+              Un algorithme glouton est un algorithme qui effectue, étape par
+              étape, le meilleur choix possible sur le moment, sans retour en
+              arrière ni anticipation des étapes suivantes, dans l’objectif
+              d’atteindre au final un résultat optimal. Les algorithmes gloutons
+              sont parfois appelés algorithmes gourmands ou encore algorithmes
+              voraces.
+            </p>
+            <p>
+              <span class="colorRed">Remarque : </span> Un algorithme glouton ne
+              renvoie pas forcément une solution optimale ; dans ce cas, on
+              parle d'heuristique gloutonne.
+            </p>
+          </li>
+          <li class="FlecheLi">
+            <h2>Cas concret - Rendu de monnaie</h2>
+
+            <h4>Tester l'algorithme de rendu de monnaie :</h4>
+            <div class="ResultMonnaie">
+              <br />
+              <input
+                type="text"
+                id="inputMonnaie"
+                placeholder="Entrez un nombre"
+              />
+              <button id="buttonMoney" onclick="algoMoney()">Tester</button>
+              <p id="resultats" class="textResultMonnaie">
+                La meilleur combinaison sera [ ].
+              </p>
+            </div>
+            <h4>
+              Quelques autres utilisations connues de l'algorithme glouton :
+            </h4>
+            <br />
+            <ul>
+              <li class="liste">
+                ‎ Arbre couvrant minimal
+                <a
+                  class="voirPlusWikip"
+                  href="https://fr.wikipedia.org/wiki/Arbre_couvrant_de_poids_minimal"
+                  target="_blank"
+                  >Voir plus</a
+                >
+              </li>
+              <li class="liste">
+                ‎ Voyageur de commerce<a
+                  class="voirPlusWikip"
+                  href="https://fr.wikipedia.org/wiki/Probl%C3%A8me_du_voyageur_de_commerce"
+                  target="_blank"
+                  >Voir plus</a
+                >
+              </li>
+              <li class="liste">
+                ‎ Problème du sac à dos<a
+                  class="voirPlusWikip"
+                  href="https://fr.wikipedia.org/wiki/Probl%C3%A8me_du_sac_%C3%A0_dos"
+                  target="_blank"
+                  >Voir plus</a
+                >
+              </li>
+              <li class="liste">
+                ‎ Codage de Huffman<a
+                  class="voirPlusWikip"
+                  href="https://fr.wikipedia.org/wiki/Codage_de_Huffman#:~:text=Le%20codage%20de%20Huffman%20est,un%20caract%C3%A8re%20dans%20un%20fichier)."
+                  target="_blank"
+                  >Voir plus</a
+                >
+              </li>
+            </ul>
+          </li>
+          <br />
+          <hr />
+        </ul>
+      </div>
+      <div class="column">
+        <img class="ImgAlgoGlou" src="AlgoGloutPic.png" height="550px" w />
+      </div>
+    </section>
+    <section class="columns">
+      <div class="column">
+        <ul>
+          <li class="FlecheLi">
+            <h2>
+              Situation original d'utilisation
+              <span class="txtGris">(Idée et code généré avec ChatGPT)</span>
+            </h2>
+
+            <p>
+              Imaginons que nous souhaitons planifiez un voyage scolaire avec
+              l'école en Espagne à travers plusieurs villes, chacune ayant une
+              attraction touristique unique. Vous souhaitez maximiser le nombre
+              d'attractions visitées tout en minimisant les coûts de
+              déplacement. Vous avez une liste de villes à visiter avec les
+              distances entre chaque paire de villes.<br /><br />
+              <span
+                ><h4>
+                  Pour résoudre ce problème, on va utiliser un algorithme
+                  glouton. Voici comment :
+                </h4></span
+              >
+            </p>
+            <ul>
+              <li class="liste2">
+                <span class="bold">Choix de la ville de départ :</span>
+                Sélectionnez une ville de départ.
+              </li>
+              <li class="liste2">
+                <span class="bold">Choix glouton : </span> À chaque étape, on
+                choisis la ville la plus proche pas encore visitée.
+              </li>
+              <li class="liste2">
+                <span class="bold">Mise à jour des données :</span> On met à
+                jour la liste des villes restantes à visiter ainsi que la
+                distance totale parcourue.
+              </li>
+              <li class="liste2">
+                <span class="bold">Répétez :</span> On répète les étapes 2 et 3
+                jusqu'à ce que toutes les villes soient visitées.
+              </li>
+              <li class="liste2">
+                <span class="bold">Retour à la ville de départ :</span> Une fois
+                que toutes les villes ont été visitées, on retourne à la ville
+                de départ pour terminer notre voyage scolaire en Espagne.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="column">
+        <div class="container">
+          <div class="container-onglet">
+            <div class="onglets active" onclick="switchTab(0)">Python</div>
+            <div class="onglets" onclick="switchTab(1)">Javascript</div>
+          </div>
+
+          <div class="contenu activeContenu">
+            <pre><code>import math
+
+def distance(ville1, ville2):
+  # Calcul de la distance euclidienne entre deux villes
+  return math.sqrt((ville1[0] - ville2[0])**2 + (ville1[1] - ville2[1])**2)
+
+def voyage_espagne(villes):
+  chemin = [0]  # Commencer à la première ville
+  distance_totale = 0
+  ville_actuelle = 0
+
+  # Tant qu'il reste des villes à visiter
+  while len(chemin) < len(villes):
+      distance_min = float('inf')
+      prochaine_ville = None
+      
+      # Parcourir toutes les villes restantes
+      for i, ville in enumerate(villes):
+          # Vérifier si la ville n'a pas déjà été visitée
+          if i not in chemin:
+              # Calculer la distance entre la ville actuelle et la ville en cours
+              dist = distance(villes[ville_actuelle], ville)
+              # Si la distance est plus petite que la distance minimale trouvée jusqu'à présent
+              if dist < distance_min:
+                  distance_min = dist
+                  prochaine_ville = i
+      
+      # Ajouter la ville la plus proche au chemin
+      chemin.append(prochaine_ville)
+      distance_totale += distance_min
+      ville_actuelle = prochaine_ville
+
+  # Retourner au point de départ
+  distance_totale += distance(villes[chemin[-1]], villes[0])
+  chemin.append(0)
+
+  return chemin, distance_totale</code></pre>
+          </div>
+          <div class="contenu">
+            <pre><code>function distance(ville1, ville2) {
+    // Calcul de la distance euclidienne entre deux villes
+    return Math.sqrt((ville1[0] - ville2[0]) ** 2 + (ville1[1] - ville2[1]) ** 2);
+}
+
+function voyage_espagne(villes) {
+    let chemin = [0];  // Commencer à la première ville
+    let distanceTotale = 0;
+    let villeActuelle = 0;
+
+    // Tant qu'il reste des villes à visiter
+    while (chemin.length < villes.length) {
+        let distanceMin = Infinity;
+        let prochaineVille = null;
+
+        // Parcourir toutes les villes restantes
+        for (let i = 0; i < villes.length; i++) {
+            // Vérifier si la ville n'a pas déjà été visitée
+            if (!chemin.includes(i)) {
+                // Calculer la distance entre la ville actuelle et la ville en cours
+                const dist = distance(villes[villeActuelle], villes[i]);
+                // Si la distance est plus petite que la distance minimale trouvée jusqu'à présent
+                if (dist < distanceMin) {
+                    distanceMin = dist;
+                    prochaineVille = i;
+                }
+            }
+        }
+
+        // Ajouter la ville la plus proche au chemin
+        chemin.push(prochaineVille);
+        distanceTotale += distanceMin;
+        villeActuelle = prochaineVille;
+    }
+
+    // Retourner au point de départ
+    distanceTotale += distance(villes[chemin[chemin.length - 1]], villes[0]);
+    chemin.push(0);
+
+    return [chemin, distanceTotale];
+}
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a href="index.html">Retourner à l'acceuil</a>
+  </body>
+  <script src="script.js"></script>
+</html>

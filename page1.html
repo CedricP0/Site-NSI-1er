@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commande Linux</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" href="Linoux.png" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-item">
+        <img src="Algo.png" height="25px" width="25px" /><a
+          class="TextNavBar"
+          href="page3.html"
+          >Algorithme Glouton</a
+        >
+      </div>
+      <div class="nav-item-active">
+        <img src="Linoux.png" height="25px" width="25px" /><a
+          class="TextNavBarActive"
+          href="page1.html"
+          >Commande Linux</a
+        >
+      </div>
+      <div class="nav-item">
+        <img src="Quizz.png" height="25px" width="25px" /><a
+          class="TextNavBar"
+          href="page2.html"
+        >
+          Quizz</a
+        >
+      </div>
+    </nav>
+
+    <h1>Les Commandes Linux</h1>
+    <h6>Définition générée avec l'aide de ChatGPT</h6>
+
+    <table class="table">
+      <tr>
+        <th>Les commandes</th>
+        <th class="large">Utilité et utilisation</th>
+      </tr>
+      <tr>
+        <td class="commande">ls</td>
+        <td class="large">
+          La commande "ls" est utilisée pour lister le contenu d'un répertoire.
+          Elle affiche les fichiers et les répertoires présents dans le
+          répertoire spécifié en argument, ou dans le répertoire courant si
+          aucun n'est spécifié. On peut utiliser ls -a pour aficher les fichiers
+          cachés.
+          <a
+            class="voirPlusCommande"
+            target="_blank"
+            href="https://www.ibm.com/docs/fr/aix/7.3?topic=l-ls-command"
+            >Voir plus</a
+          ><br /><span class="colorRed">Exemple d'utilisation : </span>
+          <span class="txtGris"
+            >On souhaite afficher le contenu du répertoire courant avec détails
+            : ls -l</span
+          >
+        </td>
+      </tr>
+      <tr>
+        <td class="commande">mkdir</td>
+        <td class="large">
+          La commande "mkdir" est utilisée pour créer un nouveau répertoire
+          (dossier) dans le système de fichiers. On peut utiliser mkdir -m pour
+          spécifier les permissions des nouveaux répertoires.<a
+            class="voirPlusCommande"
+            target="_blank"
+            href="https://www.ibm.com/docs/fr/aix/7.3?topic=m-mkdir-command"
+            >Voir plus</a
+          >
+          <br /><span class="colorRed">Exemple d'utilisation : </span>
+          <span class="txtGris"
+            >On souhaite créer un nouveau répertoire appelé "nouveau_dossier" :
+            mkdir nouveau_dossier</span
+          >
+        </td>
+      </tr>
+      <tr>
+        <td class="commande">pwd</td>
+        <td class="large">
+          La commande "pwd" signifie "Print Working Directory" (afficher le
+          répertoire courant). Elle affiche le chemin complet du répertoire dans
+          lequel vous vous trouvez actuellement.<a
+            class="voirPlusCommande"
+            target="_blank"
+            href="https://www.ibm.com/docs/fr/aix/7.3?topic=p-pwd-command"
+            >Voir plus</a
+          >
+          <br /><span class="colorRed">Exemple d'utilisation : </span>
+          <span class="txtGris"
+            >On souhaite afficher le répertoire courant : pwd</span
+          >
+        </td>
+      </tr>
+      <tr>
+        <td class="commande">cd</td>
+        <td class="large">
+          La commande "cd" est utilisée pour changer de répertoire. Elle permet
+          de se déplacer dans l'arborescence des répertoires. Option cd - pour
+          revenir au répertoire précédent.<a
+            class="voirPlusCommande"
+            target="_blank"
+            href="https://www.ibm.com/docs/fr/aix/7.3?topic=c-cd-command"
+            >Voir plus</a
+          >
+          <br /><span class="colorRed">Exemple d'utilisation : </span>
+          <span class="txtGris"
+            >On souhaite se déplacer dans le répertoire nouvellement créer : cd
+            nouveau_dossier</span
+          >
+        </td>
+      </tr>
+      <tr>
+        <td class="commande">rmdir</td>
+        <td class="large">
+          La commande "rmdir" est utilisée pour supprimer un répertoire vide
+          dans le système de fichiers.<a
+            class="voirPlusCommande"
+            target="_blank"
+            href="https://www.ibm.com/docs/fr/aix/7.3?topic=r-rmdir-command"
+            >Voir plus</a
+          >
+          <br /><span class="colorRed">Exemple d'utilisation : </span
+          ><span class="txtGris">
+            On souahite supprimer le répertoire "nouveau_dossier" : rmdir
+            nouveau_dossier</span
+          >
+        </td>
+      </tr>
+      <tr>
+        <td class="commande">cp</td>
+        <td class="large">
+          La commande "cp" est utilisée pour copier des fichiers et des
+          répertoires d'un emplacement à un autre dans le système de fichiers.<a
+            class="voirPlusCommande"
+            target="_blank"
+            href="https://www.ibm.com/docs/fr/aix/7.3?topic=c-cp-command"
+            >Voir plus</a
+          >
+          <br /><span class="colorRed">Exemple d'utilisation : </span>
+          <span class="txtGris"
+            >On souhaite copier le fichier "source.txt" dans le répertoire
+            "destination" : cp source.txt destination/</span
+          >
+        </td>
+      </tr>
+      <tr>
+        <td class="commande">rm</td>
+        <td class="large">
+          La commande "rm" est utilisée pour supprimer des fichiers ou des
+          répertoires dans le système de fichiers. Faites attention en
+          l'utilisant car elle supprime définitivement les fichiers. On peut
+          utiliser l'option rm -v pour afficher un message pour chaque fichier
+          supprimé.<a
+            class="voirPlusCommande"
+            target="_blank"
+            href="https://www.ibm.com/docs/fr/aix/7.3?topic=r-rm-command"
+            >Voir plus</a
+          >
+          <br /><span class="colorRed">Exemple d'utilisation : </span>
+          <span class="txtGris"
+            >On souhaite supprimer le fichier "oldfile.txt": rm
+            oldfile.txt</span
+          >
+        </td>
+      </tr>
+      <tr>
+        <td class="commande">mv</td>
+        <td class="large">
+          La commande "mv" est utilisée pour déplacer ou renommer des fichiers
+          et des répertoires dans le système de fichiers. On peut utiliser
+          l'option mv -b pour créer une sauvegarde des fichiers écrasés.<a
+            class="voirPlusCommande"
+            target="_blank"
+            href="https://www.ibm.com/docs/fr/aix/7.3?topic=m-mv-command"
+            >Voir plus</a
+          >
+          <br /><span class="colorRed">Exemple d'utilisation : </span>
+          <span class="txtGris"
+            >On souhaite déplacer le fichier "file.txt" vers le répertoire
+            "documents": mv file.txt documents/</span
+          >
+        </td>
+      </tr>
+      <tr>
+        <td class="commande">cat</td>
+        <td class="large">
+          La commande "cat" est utilisée pour afficher le contenu d'un fichier
+          texte à l'écran. Elle peut également être utilisée pour concaténer des
+          fichiers et en afficher le contenu.<a
+            class="voirPlusCommande"
+            target="_blank"
+            href="https://www.ibm.com/docs/fr/aix/7.3?topic=c-cat-command"
+            >Voir plus</a
+          >
+          <br /><span class="colorRed">Exemple d'utilisation : </span>
+          <span class="txtGris"
+            >On souhaite afficher le contenu du fichier "livre.txt" : cat
+            livre.txt</span
+          >
+        </td>
+      </tr>
+      <tr>
+        <td class="commande">man</td>
+        <td class="large">
+          La commande "man" est une commande utilisée pour afficher le manuel
+          d'utilisation (documentation) d'une autre commande. Elle fournit des
+          informations détaillées sur l'utilisation et les options disponibles
+          pour la commande spécifiée en argument.<a
+            class="voirPlusCommande"
+            target="_blank"
+            href="https://www.it-connect.fr/la-commande-man/"
+            >Voir plus</a
+          >
+          <br /><span class="colorRed">Exemple d'utilisation : </span
+          ><span class="txtGris">
+            On souhaite afficher le manuel de la commande "ls" : man ls</span
+          >
+        </td>
+      </tr>
+      <tr>
+        <td class="commande">clear</td>
+        <td class="large">
+          La commande "clear" est utilisée pour effacer le contenu de la fenêtre
+          de terminal, ce qui permet de nettoyer l'écran et de rendre la console
+          plus lisible.<a
+            class="voirPlusCommande"
+            target="_blank"
+            href="https://www.ibm.com/docs/fr/aix/7.3?topic=c-clear-command"
+            >Voir plus</a
+          >
+          <br /><span class="colorRed">Exemple d'utilisation : </span>
+          <span class="txtGris"
+            >On souhaite effacer l'écran du terminal : clear</span
+          >
+        </td>
+      </tr>
+      <tr>
+        <td class="commande">echo</td>
+        <td class="large">
+          La commande "echo" est utilisée pour afficher du texte ou des
+          variables dans la sortie standard. Elle est souvent utilisée dans les
+          scripts shell pour afficher des messages à l'utilisateur ou pour
+          rediriger du contenu vers des fichiers.<a
+            class="voirPlusCommande"
+            target="_blank"
+            href="https://www.ibm.com/docs/fr/aix/7.3?topic=e-echo-command"
+            >Voir plus</a
+          >
+          <br /><span class="colorRed">Exemple d'utilisation : </span
+          ><span class="txtGris"
+            >On souhaite afficher "Hello World!" : echo "Hello World!"</span
+          >
+        </td>
+      </tr>
+      <tr>
+        <td class="commande">ping</td>
+        <td class="large">
+          La commande "ping" est utilisée pour vérifier la connectivité réseau
+          avec une autre machine en envoyant des paquets ICMP et en recevant des
+          réponses. Elle est couramment utilisée pour diagnostiquer les
+          problèmes de réseau.<a
+            class="voirPlusCommande"
+            target="_blank"
+            href="https://www.ibm.com/docs/fr/aix/7.3?topic=analysis-ping-command"
+            >Voir plus</a
+          >
+          <br /><span class="colorRed">Exemple d'utilisation : </span
+          ><span class="txtGris">
+            On souhaite vérifier la connectivité avec l'adresse IP 4.4.4.4 :
+            ping 4.4.4.4</span
+          >
+        </td>
+      </tr>
+      <tr>
+        <td class="commande">touch</td>
+        <td class="large">
+          La commande "touch" est utilisée pour créer un fichier vide ou pour
+          mettre à jour l'horodatage d'un fichier existant. Si le fichier
+          spécifié n'existe pas, "touch" le crée.<a
+            class="voirPlusCommande"
+            target="_blank"
+            href="https://www.ibm.com/docs/fr/aix/7.3?topic=t-touch-command"
+            >Voir plus</a
+          >
+          <br /><span class="colorRed">Exemple d'utilisation : </span>
+          <span class="txtGris"
+            >On souhaite créer un nouveau fichier vide appelé
+            "nouveau_fichier.txt" : touch nouveau_fichier.txt</span
+          >
+        </td>
+      </tr>
+      <tr>
+        <td class="commande">sudo</td>
+        <td class="large">
+          La commande "sudo" est utilisée pour exécuter une commande en tant
+          qu'utilisateur superutilisateur (administrateur) ou en tant qu'autre
+          utilisateur autorisé. Elle est souvent utilisée pour effectuer des
+          tâches nécessitant des privilèges d'administration.<a
+            class="voirPlusCommande"
+            target="_blank"
+            href="https://wiki-tech.io/Linux/D%C3%A9butant/Sudo"
+            >Voir plus</a
+          >
+          <br /><span class="colorRed">Exemple d'utilisation : </span>
+          <span class="txtGris"
+            >On souhaite éxecuter la commande "apt-get update" (Permet de mettre
+            à jour l'ensemble des paquets installés sur son PC) avec les
+            permissions administrateur.</span
+          >
+        </td>
+      </tr>
+      <tr>
+        <td class="commande">chmod</td>
+        <td class="large">
+          La commande "chmod" est utilisée pour modifier les permissions d'accès
+          (lecture, écriture, exécution) des fichiers et des répertoires dans le
+          système de fichiers. Elle permet de définir qui peut faire quoi avec
+          un fichier ou un répertoire.<a
+            class="voirPlusCommande"
+            target="_blank"
+            href="https://www.ibm.com/docs/fr/aix/7.3?topic=c-chmod-command"
+            >Voir plus</a
+          >
+          <br /><span class="colorRed">Exemple d'utilisation : </span>
+          <span class="txtGris"
+            >On souhaite modifier les permissions du fichier "script.sh" pour le
+            rendre exécutable par tous les utilisateurs : chmod +x
+            script.sh</span
+          >
+        </td>
+      </tr>
+    </table>
+    <a href="index.html">Retourner à l'acceuil</a>
+  </body>
+  <script src="script.js"></script>
+</html>
